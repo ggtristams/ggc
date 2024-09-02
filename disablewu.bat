@@ -35,4 +35,4 @@ if /i "%action%"=="S" (
 )
 
 endlocal
-pause
+timeout 5
