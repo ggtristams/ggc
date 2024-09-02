@@ -50,4 +50,5 @@ if %errorlevel% equ 0 (
 )
 
 endlocal
-pause
+timeout 5
+exit
