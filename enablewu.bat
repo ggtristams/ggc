@@ -28,7 +28,7 @@ sc query wuauserv | findstr /i "RUNNING" >nul
 if %errorlevel% equ 0 (
     echo wuauserv is already running.
     echo.
-    set /p startGGLeap="Would you like to start the GGLeap client? (Y/N): "
+    set /p startGGLeap="Would you like to start the ggLeap client? (Y/N): "
     if /i "%startGGLeap%"=="Y" (
         echo Stopping clientinterface.exe if it's running...
         taskkill /f /im clientinterface.exe >nul 2>&1
