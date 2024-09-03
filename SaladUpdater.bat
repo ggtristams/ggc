@@ -15,7 +15,7 @@ set "tempDir=%temp%\Wub"
 if exist "%tempFile%" del "%tempFile%"
 if exist "%tempDir%" rmdir /s /q "%tempDir%"
 
-:: goto :checkFileExistence
+goto :checkFileExistence
 
 :checkFileExistence
 echo Checking if Salad is already installed...
