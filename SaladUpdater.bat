@@ -125,5 +125,5 @@ if exist "%tempDir%" rmdir /s /q "%tempDir%"
 :end
 echo - Cleanup completed.
 endlocal
-timeout /t 10
+timeout /t 2
 exit /b
