@@ -92,14 +92,14 @@ sc query wuauserv | findstr /i "RUNNING" >nul
 if %errorlevel% equ 0 (
     echo wuauserv is already running.
     echo.
-    choice /c YN /n /t 10 /d N /m "Would you like to start the GGLeap client? (Y/N): "
+    choice /c YN /n /t 10 /d N /m "Would you like to start the ggLeap client? (Y/N): "
     if %errorlevel% equ 1 (
         echo Stopping clientinterface.exe if it's running...
         taskkill /f /im clientinterface.exe >nul 2>&1
-        echo Starting GGLeap client...
+        echo Starting ggLeap client...
         start "" "C:\ggLeap\clientinterface.exe"
     ) else (
-        echo No response or 'N' selected. GGLeap client will not be started.
+        echo No response or 'N' selected. ggLeap client will not be started.
     )
 ) else (
     echo wuauserv failed to start, reboot may be required.
