@@ -43,7 +43,7 @@ if %errorlevel% equ 0 (
     set /p rebootChoice="Would you like to reboot the system now? (Y/N): "
     if /i "%rebootChoice%"=="Y" (
         echo Initiating system reboot...
-        shutdown /r /t 30
+        shutdown /r /t 5
     ) else (
         echo No reboot selected. Exiting.
     )
